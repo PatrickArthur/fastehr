@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def claim
-    @doc = Docx::Document.open("../patest.docx")
+    # @doc = Docx::Document.open("../patest.docx")
   end
 
 
