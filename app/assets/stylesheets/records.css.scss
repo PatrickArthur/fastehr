@@ -1,0 +1,52 @@
+// Place all the styles related to the Records controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table, th, td {
+  border:1px solid;
+}
+
+table {
+  margin:30px;
+  td {
+    padding:10px;
+}
+th {
+  padding:20px;
+}
+}
+
+.trbutton {
+  right:40px;
+  position:absolute;
+  background: #AEF;
+  border: none;
+  border-radius:5px;
+  font-size:18px;
+  font-weight:bold;
+  padding:10px;
+}
+
+
+
+
+.goalProgress {
+	background: #f7f7f7;
+	padding: 5px;
+}
+div.progressBar {
+	background: #CEF;
+	color: #fff;
+	font-size: 1.5em;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	letter-spacing: -1px;
+	font-weight: 700;
+	padding: 10px;
+	display: block;
+	overflow: hidden;
+	width: 20px;
+}
+span.goalAmount {
+	display: none;
+	text-indent: -9999px;
+}

@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :records
   get 'coding' => "records#coding"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+=======
+>>>>>>> 28662242ddbd17f449c5fc5a5e0f94bad165dc61
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root :to => "pages#index"
+  get '/pages/claim', to: 'pages#claim'
+  get '/pages/annotation', to: 'pages#annotation'
+  get '/pages/decision', to: 'pages#decision'
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

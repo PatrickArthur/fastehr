@@ -1,0 +1,35 @@
+<br>
+<h1>Patient Visit Records</h1>
+<br>
+
+<div class="trbutton"><%= link_to 'Generate ICD Codes', '/coding' %></div>
+<br>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Document id</th>
+      <th>Medical History</th>
+      <th>Radiology Impression</th>
+      <th>ICD Codes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @records.each_with_index do |record,i| %>
+      <tr>
+        <td><%= i+1 %></td>
+        <td><%= record.docid %></td>
+        <td style="width:35%;"><%= record.history %></td>
+        <td style="width:35%;"><%= record.impression %></td>
+        <td style="width:200px;"></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Record', new_record_path %>

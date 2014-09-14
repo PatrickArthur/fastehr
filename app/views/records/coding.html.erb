@@ -1,0 +1,46 @@
+<br>
+<h1><%= link_to 'Patient Visit Records', records_path %></h1>
+<br>
+
+<div id="sample_goal"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Document id</th>
+      <th>Medical History</th>
+      <th>Radiology Impression</th>
+      <th>ICD Codes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @records.each_with_index do |record,i| %>
+      <tr>
+        <td><%= i+1 %></td>
+        <td><%= record.docid %></td>
+        <td style="width:35%;"><%= record.history %></td>
+        <td style="width:35%;"><%= record.impression %></td>
+        <td style="width:200px; background:#CEF;"><%= record.codes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<script type="text/javascript" charset="utf-8">
+
+$(document).ready(function(){
+ $('#sample_goal').goalProgress({
+  goalAmount: 970,
+  currentAmount: 970,
+  speed: 10000,
+  textBefore: '',
+  textAfter: ' processed'
+ });
+});
+</script>
+
+<%= link_to 'New Record', new_record_path %>

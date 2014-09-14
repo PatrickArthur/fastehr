@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @record.pid %>
+</p>
+
+<p>
+  <strong>Docid:</strong>
+  <%= @record.docid %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @record.history %>
+</p>
+
+<p>
+  <strong>Impression:</strong>
+  <%= @record.impression %>
+</p>
+
+<p>
+  <strong>Codes:</strong>
+  <%= @record.codes %>
+</p>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

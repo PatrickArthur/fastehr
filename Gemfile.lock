@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/dayflower/msworddoc-extractor.git
+  revision: 578f7814bdfcf8f17ed9f69e1be2e9f635fce998
+  specs:
+    msworddoc-extractor (0.1.0)
+      ruby-ole
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -94,6 +101,7 @@ GEM
     rdoc (4.1.2)
       json (~> 1.4)
     ref (1.0.5)
+    ruby-ole (1.2.11.7)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -146,7 +154,11 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   less-rails
+<<<<<<< HEAD
   nokogiri (= 1.6.0)
+=======
+  msworddoc-extractor!
+>>>>>>> 28662242ddbd17f449c5fc5a5e0f94bad165dc61
   rails (= 4.1.1)
   randumb
   sass-rails (~> 4.0.3)

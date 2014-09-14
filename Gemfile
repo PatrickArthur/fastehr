@@ -31,6 +31,8 @@ gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails", '2.2.8'
 gem "font-awesome-rails"
+gem 'msworddoc-extractor', :git =>
+  'git://github.com/dayflower/msworddoc-extractor.git'
 
 gem 'nokogiri', '1.6.0'
 gem 'randumb'
